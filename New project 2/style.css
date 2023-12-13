@@ -72,12 +72,15 @@ html, body{
     font-size: 1.2em;
     margin-top: 3rem;
     padding: 0.75rem 1rem;
-    border: #ffff 1px solid;
+    border: #000000 1px solid;
+    border-radius: 5px;
     background-color: rgb(0,0, 0, 0.6);
     cursor: pointer;
+    color: #ffff;
 }
 .hero__main__text {
     font-size: 4rem;
+    color: #ffff;
 }
 .text-overlay .drop-down-menu{
     display: flex;
@@ -595,9 +598,14 @@ footer::before{
 }
 @media (min-width:360px){
     #special-menu img{
-        width: 315px;
+        width: 300px;
         height: 230px;
         display: block;
+    }
+    #hero-section .hero__main__text{
+        font-size: 1.5rem;
+        padding-top: 0.75rem;
+        margin-top: 1rem;
     }
     .special__menu__header{
         margin: 0rem;
@@ -608,6 +616,13 @@ footer::before{
         padding: 0.5rem;
         font-size: 1.5rem;
     } 
+    #hero-section select{
+        width: 130px;
+        padding: 0.55rem;
+    }
+    .text-overlay button{
+        margin: 0.2rem 0 2rem 0;
+    }
 
     #promotion-content img{
         display: block;
@@ -645,7 +660,11 @@ footer::before{
     .menu__items > .meal-tag{
         font-size: 1rem;
         margin: 1rem;
-    }  
+    }
+    #News-Sec{
+        padding-bottom: 2.7rem;
+        padding-top: 2rem;
+    }
 
 
 }
@@ -696,7 +715,7 @@ footer::before{
 
     /*--Special Menu section--*/
     #special-menu img{
-        width: 380px;
+        width: 350px;
         height: 290px;
         display: block;
     }
@@ -853,6 +872,17 @@ footer::before{
         padding: 0; 
         align-items: center;
     }
+    #hero-section select{
+        width: auto;
+        padding: 0.55rem;
+    }
+    #hero-section .hero__main__text{
+        font-size: 3rem;
+    }
+    .text-overlay button{
+        margin: 2rem 0 2rem 0;
+    }
+
 
     #special-menu img{
         width: 330px;
@@ -993,12 +1023,13 @@ footer::before{
         font-size: 1.2em;
         margin-top: 3rem;
         padding: 0.75rem 1rem;
-        border: #ffff 1px solid;
+        border: #000000 1px solid;
         background-color: rgb(0,0, 0, 0.6);
         cursor: pointer;
     }
-    .hero__main__text {
+    #hero-section .hero__main__text {
         font-size: 4rem;
+        margin:  0 0 3rem 0;
     }
     .text-overlay .drop-down-menu{
         display: flex;
